@@ -1,5 +1,13 @@
 public class PrimitivosEnteros {
+
+    static byte varByte;
+    static short varShort;
+    static int varInt;
+    static long varLong;
+
     public static void main(String[] args) {
+
+        // ----------------------------------------------- <> byte, short, int y long
         byte numeroByte = 127;
         System.out.println("numeroByte = " + numeroByte);
         System.out.println("Tipo byte en bytes es " + Byte.BYTES);
@@ -28,6 +36,24 @@ public class PrimitivosEnteros {
         System.out.println("Valor máximo de un long " + Long.MAX_VALUE);
         System.out.println("Valor mínimo de un long " + Long.MIN_VALUE);
 
+        // ------------------------ <> var
+        var numByte = 127; // int
+        var numShort = 32767; // int
+        var numInt = 2147483647; // int
+        var numLong = 9223372036854775807L; // long
+
+        System.out.println("numLong = " + numLong); // ...
+
+        // -------------------------- <> Valores por defecto, ..requiere variables estáticas en este caso
+//        byte varByte = 127; // int
+//        short varShort = 32767; // int
+//        int varInt = 2147483647; // int
+//        long varLong = 9223372036854775807L; // long
+
+        System.out.println("varByte = " + varByte);
+        System.out.println("varShort = " + varShort);
+        System.out.println("varInt = " + varInt);
+        System.out.println("varLong = " + varLong);
     }
 }
 
