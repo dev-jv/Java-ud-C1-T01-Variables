@@ -1,6 +1,6 @@
 public class ConversionDeTipos {
     public static void main(String[] args) {
-
+        //---------------------- <> String -> Tipo ...
         String numeroStr = "50";
 
         int numeroInt = Integer.parseInt(numeroStr);
@@ -32,14 +32,26 @@ public class ConversionDeTipos {
 
         char datChar = charStr.charAt(0);
         System.out.println("datChar = " + datChar);
-    }
-}
 
-// -------------------------------------------------------------- <> var
+        //---------------------- <> Tipo ... -> String
+        int numInt = 100;
+        System.out.println("numInt = " + numInt);
 
-//public class ConversionDeTipos {
-//    public static void main(String[] args) {
-//
+        String numStr = Integer.toString(numInt);
+        System.out.println("numStr = " + numStr);
+
+        numStr = String.valueOf(numInt+5);
+        System.out.println("numStr = " + numStr);
+
+        double reDouble = 1.23456e2;
+
+        String reStr = Double.toString(reDouble);
+        System.out.println("reStr = " + reStr);
+
+        reStr = String.valueOf(1.234567f);
+        System.out.println("reStr = " + reStr);
+
+//        //---------------------- <> var[String -> Tipo ...]
 //        var numeroStr = "50";
 //
 //        var numeroInt = Integer.parseInt(numeroStr);
@@ -71,8 +83,5 @@ public class ConversionDeTipos {
 //
 //        var datChar = charStr.charAt(0);
 //        System.out.println("datChar = " + datChar);
-//    }
-//}
-
-
-
+    }
+}
