@@ -51,6 +51,28 @@ public class ConversionDeTipos {
         reStr = String.valueOf(1.234567f);
         System.out.println("reStr = " + reStr);
 
+        //---------------------- <> Tipo ... -> Tipo ... ... CAST !
+        System.out.println(Short.MAX_VALUE);
+
+        int i = 32767;
+
+        short s = (short) i;
+        System.out.println("s = " + s);
+        
+        long l = i;
+        System.out.println("l = " + l);
+
+        char b = (char)i;
+        System.out.println("b = " + b);
+
+        float f = (float) i;
+        System.out.println("f = " + f);
+
+        // > Superioridad de Tipos
+        int x = 1000;
+        long y = x;
+//        int z = y;
+
 //        //---------------------- <> var[String -> Tipo ...]
 //        var numeroStr = "50";
 //
